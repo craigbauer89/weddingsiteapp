@@ -96,12 +96,30 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "weddingsiteapp:build:production",
+            "firebaseProject": "craigandbenniwedding-a9286",
+            "firebaseHostingSite": "craigandbenniwedding-a9286"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

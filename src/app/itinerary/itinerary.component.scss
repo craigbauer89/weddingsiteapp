@@ -1,0 +1,79 @@
+.template {
+    height:1111px;
+    
+    background: url("../../assets/img/stylish-g72734aa02_640.jpg");
+    backdrop-filter: contrast(40%);
+    position: relative;
+    background-size: 1000px,1000px;
+    background-repeat: repeat;
+    
+}
+
+.hotels {
+    position: absolute;
+  
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+  
+    background: url("../../assets/img/templatewedding.png");
+    background-size: 100% 100%;
+    
+    background-repeat: no-repeat;
+   
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  
+    height: 1000px;
+    margin-top: 120px;
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 1.2rem;
+    border-radius: 5px;
+    // background-image: ;
+   
+    
+}
+
+.details {
+    margin: 0 5%;
+    height: 100%;
+    width: 50%;
+    
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+h2 {
+   
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+    .hotels {
+        font-size: 1rem;
+        background-size: 100% 800px;
+
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+}

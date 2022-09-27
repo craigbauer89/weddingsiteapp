@@ -1,0 +1,135 @@
+
+body {
+    
+    margin: 10% 10%;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+
+.firstdiv {
+    width: 95%;
+    margin: 0 2.5%;
+    height: 500px;
+    background: url("../../assets/img/backdrop.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 0;
+    text-align: center;
+    align-content: center;
+    font-family: 'Alex Brush', cursive;
+    color: black;
+}
+
+p {
+    height: 5px;
+}
+
+.maps {
+    
+   
+    font-family: 'Alex Brush', cursive;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+    height: 300px;
+    justify-content: space-around;
+    
+    
+    color: grey;
+    
+}
+
+.details {
+    margin: 2.5% 0;
+    width: 45%;
+    background-color: white;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+.logo {
+    margin: 5% auto;
+    margin-bottom: 0;
+    width: 295px;
+    height: 90px;
+    background: url("../../assets/img/logo.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+i {
+    font-size: 1rem;
+}
+
+.picture {
+    background: url("../../assets/img/smallvilla.jpg");
+   
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 2.5% 0;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+iframe {
+    height: 300px;
+    width: 95%;
+    margin: 2.5% 2.5%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 830px) {
+  
+    .maps {
+        
+        height: 750px;
+     
+        
+    }
+
+    .logo {
+        margin-top: 15%;
+
+    }
+    .details {
+       
+        width: 90%;
+       height: 45%;
+        text-align: center;
+        
+    }
+    
+    .picture {
+    
+        width: 90%;
+        height: 45%;
+     
+    }
+
+    iframe {
+       
+        width: 90%;
+        margin: 2.5% 5%;
+       
+    }
+
+  
+}

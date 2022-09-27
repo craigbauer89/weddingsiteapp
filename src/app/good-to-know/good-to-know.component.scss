@@ -1,0 +1,31 @@
+.hotels {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10%;
+    width: 80%;
+    margin-top: 120px;
+
+
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+.details {
+    margin: 2% 5%;
+    width: 80%;
+    background-color: white;
+    text-align: center;
+   
+    border-radius: 5px;
+}
+
+i {
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+}

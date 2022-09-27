@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "craigandbenniwedding-a9286"
+  },
+  "targets": {
+    "craigandbenniwedding-a9286": {
+      "hosting": {
+        "weddingsiteapp": [
+          "craigandbenniwedding-a9286"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+
+.mainpage {
+    margin-top: 100px;
+}
+
+.hotels {
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5%;
+    width: 90%;
+    margin-top: 25px;
+    height: 350px;
+    
+    border-radius: 5px;
+    justify-content: space-around;
+    background-color: white;
+    
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+}
+
+
+
+i {
+    
+    height: 15px;
+    width: 100%;
+    font-size: .9rem;
+    
+}
+
+
+.details {
+    
+    margin: 2.5% 0;
+    width: 45%;
+    
+    border-radius: 5px;
+    height: 75%;
+    background-color: white;
+    text-align: center;
+}
+
+.bestwest {
+    background: url("../../assets/img/bestwest.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 2.5% 0;
+    width: 35%;
+   
+    border-radius: 5px;
+    height: 75%;
+}
+
+.apartments {
+    background: url("../../assets/img/apartments.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 2.5% 0;
+    width: 35%;
+   
+    border-radius: 5px;
+    height: 75%;
+}
+
+.hotel2 {
+    background: url("../../assets/img/santhotel2.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    margin: 2.5% 0;
+    width: 35%;
+    
+    height: 75%;
+   
+    border-radius: 5px;
+}
+
+p {
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 768px) {
+  
+    .hotels {
+        
+        height: 750px;
+     
+        
+    }
+
+
+    .details {
+        margin: 2.5% 0;
+        width: 90%;
+        height: 45%
+    }
+    
+    .bestwest, .hotel2, .apartments {
+        margin: 2.5% 0;
+        width: 90%;
+        height: 45%
+     
+    }
+
+  
+}

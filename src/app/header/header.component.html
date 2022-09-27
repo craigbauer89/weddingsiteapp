@@ -1,0 +1,36 @@
+<!-- 
+<div>
+    <div>
+        <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+        <a class="nav-link" href="#" [routerLink]="['/location']" routerLinkActive="router-link-active">Location</a>
+        <a class="nav-link" href="#" [routerLink]="['/accomodation']" routerLinkActive="router-link-active">Accomodation</a>
+        <a class="nav-link" href="#" [routerLink]="['/travel']" routerLinkActive="router-link-active">Travel</a>
+    </div>
+</div> -->
+<!-- <i class="fa-regular fa-list-dropdown"></i> -->
+<!-- <i class="bi bi-three-dots"></i> -->
+<header>
+    <div class="decoration">
+         <div>
+             <label for="menuButton" id="menuMobile"><i class="bi bi-three-dots"></i></label>
+             <input type="checkbox" id="menuButton">
+             <nav>
+                 <ul>
+                     <li><a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeMenu()">Home</a></li>
+                     <li>  <a class="nav-link" href="#" [routerLink]="['/itinerary']" routerLinkActive="router-link-active"(click)="closeMenu()">Itinerary</a></li>
+ 
+                         <li>   <a class="nav-link" href="#" [routerLink]="['/location']" routerLinkActive="router-link-active"(click)="closeMenu()">Venue</a></li>
+                             <li>   <a class="nav-link" href="#" [routerLink]="['/accomodation']" routerLinkActive="router-link-active"(click)="closeMenu()">Accomodation</a></li>
+                                 <li>  <a class="nav-link" href="#" [routerLink]="['/travel']" routerLinkActive="router-link-active"(click)="closeMenu()">Travel</a></li>
+                                 <li>  <a class="nav-link" href="#" [routerLink]="['/goodtoknow']" routerLinkActive="router-link-active"(click)="closeMenu()">Good to Know</a></li>
+                                 <li> <a class="nav-link" href="#" [routerLink]="['/login']" routerLinkActive="router-link-active"  (click)="logout()">Logout</a></li>
+                                            </ul> 
+             </nav>   
+         </div>
+         <div class="initials">
+                         <!-- B 
+             <br>   &
+             <br>      C -->
+         </div>
+     </div>
+ </header>

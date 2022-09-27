@@ -1,0 +1,203 @@
+
+
+ header {
+    width: 100%;
+    box-shadow: 0 3px 15px lightgrey;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5rem;
+    
+}
+
+
+.decoration {
+    border-top: 2.5px solid grey;
+    
+    border-top-width: 50%;
+    border-bottom: 1px solid grey;
+    border-bottom-width: 30%;
+    border-radius: 25px 0px 25px 0px;
+    /* border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%; */
+
+    
+    width: 100%;
+  padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.initials {
+    height: 50px;
+    background: url("../../assets/img/bandc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Alex Brush', cursive;
+    font-size: 2rem;
+    width: 10%;
+    
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav li  {
+   
+    padding: 0;
+   
+}
+
+nav li a {
+    
+    text-decoration: none;
+    color: grey;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: grey;
+    padding: 0%;
+    text-decoration: underline;
+}
+
+header nav ul li a:hover{
+    color: white;
+    
+}
+
+
+nav li a:active {
+    
+    color: red;
+    text-decoration: none;
+    
+}
+
+label {
+    margin-top: 25px;
+}
+
+nav ul {
+    text-align: left;
+}
+
+#menuMobile .lni {
+    
+    font-size: 2rem;
+    color: #e42424; 
+}
+
+input#menuButton {
+    display: none;
+   
+}
+
+input#menuButton:checked ~ nav {
+    height: 170px;
+    
+} 
+
+ @media screen and (max-width: 768px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+        
+    }
+
+    nav li a:hover {
+        color: white;
+        background-color: grey;
+        padding: 0%;
+        
+    }
+    
+    header nav ul li a:hover{
+        color: white;
+        
+    }
+
+    i {
+        
+        font-size: 25px;
+        
+     
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+
+
+ header {
+
+    font-size: 1.8rem;
+    
+}
+}
+
+@media screen and (max-width: 1050px) {
+
+
+    header {
+   
+       font-size: 1.5rem;
+       
+   }
+
+}
+
+@media screen and (max-width: 880px) {
+
+
+    header {
+   
+       font-size: 1.2rem;
+       
+   }
+
+}
+
+@media screen and (min-width: 768px) {
+
+   
+    
+   
+
+    #menuMobile {
+        display: none;
+    }
+    
+    header nav ul {
+        margin-right: 2em;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+
+  
+
+}

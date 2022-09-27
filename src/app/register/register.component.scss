@@ -2,9 +2,9 @@
 .body {
     
     
-    height:980px;
+    height:1200px;
     background: url("../../assets/img/heart-g055257839_640.png");
-    -webkit-filter: grayscale(100%);
+  
     background-size: 200px,200px;
     background-repeat: repeat;
     
@@ -23,10 +23,10 @@
     flex-wrap: wrap;
     height: 500px;
     width: 50%;
-    background-color: rgb(251, 250, 250);
+    background-color: rgb(208, 229, 245);
     border: 1px solid rgb(61, 61, 141);
-    box-shadow: 2.5px 5px black;
-    border-radius: 50px;
+    box-shadow: .5px 5px black;
+    border-radius: 40px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -63,11 +63,79 @@ input, button, h1 {
     border: none;
     text-align: center;
     
+    
+
+}
+button {
+
+background-color: rgb(242, 222, 225);
 
 }
 
 .heading{
     font-family: 'Alex Brush', cursive;
     margin-bottom: 20%;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .spacing {
+        height:  200px;
+    }
+  
+
+    
+    .login {
+  
+        margin: 0 25%;
+        height: 250px;
+       
+       
+    
+    }
+
+    input, button, h1 {
+    
+        margin: 0 10%;
+        width:80%;
+        height: 30px;
+        font-size: .2rem;
+        
+    
+    }
+
+    .username, .password, .login1, .register, .heading {
+
+        height: 20px;
+        width: 70%;
+        margin: 0 15%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: .2rem;
+    
+    }
+
+    .heading, h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+
+    .body {
+    
+    
+        height:2000px;
+   
+        
+    }
+
 }

@@ -17,7 +17,7 @@
 
 .login {
   
-    margin: 0 25%;
+    margin: 10% 25%;
    
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@
 }
 
 form {
-    margin-top: 1000px;
+
     width: 80%;
     margin: 10%;
 }
@@ -78,6 +78,23 @@ background-color: rgb(242, 222, 225);
     font-size: 3.5rem;
 }
 
+@media only screen and (max-width: 800px) {
+
+
+    .login {
+  
+     
+        height: 350px;
+
+       
+       
+
+    }
+
+
+}
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -91,7 +108,7 @@ background-color: rgb(242, 222, 225);
     .login {
   
         margin: 0 15%;
-        height: 250px;
+        height: 350px;
         width: 70%;
        
        
@@ -100,8 +117,8 @@ background-color: rgb(242, 222, 225);
 
     input, button, h1 {
     
-        margin: 0 10%;
-        width:80%;
+        margin: 0 5%;
+        width:90%;
         height: 30px;
         font-size: .9rem;
         
@@ -111,8 +128,8 @@ background-color: rgb(242, 222, 225);
     .username, .password, .login1, .register, .heading {
 
         height: 20px;
-        width: 80%;
-        margin: 0 10%;
+        width: 90%;
+        margin: 0 5%;
         margin-top: 15px;
         margin-bottom: 15px;
         font-size: .9rem;
@@ -139,4 +156,26 @@ background-color: rgb(242, 222, 225);
         
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+
+    .login {
+  
+       
+        height: 200px;
+    
+       
+       
+    
+    }
+
+
+input, button{
+    
+  
+    font-size: .1rem;
+    
+
+}
 }

@@ -47,8 +47,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Alex Brush', cursive;
-    font-size: 2rem;
-    width: 10%;
+    // font-size: 2rem;
+    width: 5%;
+  
     
 }
 
@@ -108,7 +109,7 @@ input#menuButton {
 }
 
 input#menuButton:checked ~ nav {
-    height: 200px;
+    height: 250px;
     
 } 
 
@@ -141,9 +142,17 @@ input#menuButton:checked ~ nav {
      
     }
 
+    .initials {
+
+        width: 10%;
+        font-size: 5rem;
+      
+
+    }
+
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1600px) {
 
 
  header {
@@ -161,6 +170,7 @@ input#menuButton:checked ~ nav {
        font-size: 1.3rem;
        
    }
+   
 
 }
 

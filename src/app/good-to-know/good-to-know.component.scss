@@ -1,3 +1,10 @@
+body {
+
+    background: url("../../assets/img/pexels-nataliya-vaitkevich-4641859.jpg");
+    background-size: 100% 100%;
+}
+
+
 .hotels {
     
     display: flex;
@@ -5,7 +12,7 @@
     justify-content: center;
     margin: 0 10%;
     width: 80%;
-    margin-top: 120px;
+    margin-top: 80px;
 
 
     font-size: 1.5rem;
@@ -15,7 +22,7 @@
 .details {
     margin: 2% 5%;
     width: 80%;
-    background-color: white;
+
     text-align: center;
    
     border-radius: 5px;
@@ -38,7 +45,7 @@ h3 {
    
         .hotels {
     
-          
+            margin-top: 100px;
             font-size: .5rem;
            
         }

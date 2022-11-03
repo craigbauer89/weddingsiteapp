@@ -10,7 +10,7 @@ import { FirebaseService } from '../services/firebase.service';
 })
 export class LoginComponent implements OnInit {
 
-  email : string = '';
+  email : string = "craigandbenni@gmail.com";
   password : string = '';
  
 

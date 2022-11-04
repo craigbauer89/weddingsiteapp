@@ -2,12 +2,9 @@
 .body {
     
     
-    height:1200px;
-    background: url("../../assets/img/heart-g055257839_640.png");
-  
-    background-size: 200px,200px;
-    background-repeat: repeat;
-    
+    height: 1200px;
+    background-image: url(../../assets/img/pexels-karolina-grabowska-4041357.jpg);
+    background-position: 40% 40%;
     
 }
 
@@ -23,7 +20,7 @@
     flex-wrap: wrap;
     height: 500px;
     width: 50%;
-    background-color: rgb(208, 229, 245);
+    background-color: white;
     border: 1px solid rgb(61, 61, 141);
     box-shadow: .5px 5px black;
     border-radius: 40px;
@@ -78,13 +75,51 @@ background-color: rgb(242, 222, 225);
     font-size: 3.5rem;
 }
 
+
+@media only screen and (min-width: 1800px) {
+
+
+    .login {
+  
+        margin: 10% 35%;
+        width: 30%;
+
+}
+
+}
+
+
+@media only screen and (max-width: 1800px) {
+
+
+    .login {
+  
+        margin: 10% 35%;
+        width: 30%;
+
+}
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+
+    .login {
+  
+        margin: 10% 20%;
+        width: 60%;
+
+}
+
+}
+
 @media only screen and (max-width: 800px) {
 
 
     .login {
   
      
-        height: 350px;
+        height: 400px;
 
        
        
@@ -117,7 +152,7 @@ background-color: rgb(242, 222, 225);
 
     input, button, h1 {
     
-        margin: 0 5%;
+        margin: 10% 5%;
         width:90%;
         height: 30px;
         font-size: .9rem;
@@ -163,8 +198,9 @@ background-color: rgb(242, 222, 225);
     .login {
   
        
-        height: 200px;
-    
+        height: 300px;
+        margin: 0 7.5%;
+        width: 85%;
        
        
     
@@ -174,7 +210,7 @@ background-color: rgb(242, 222, 225);
 input, button{
     
   
-    font-size: .1rem;
+    font-size: .7rem;
     
 
 }

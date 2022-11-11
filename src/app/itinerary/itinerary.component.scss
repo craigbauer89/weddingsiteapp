@@ -1,10 +1,11 @@
 .template {
     height:1111px;
     
-    background: url("../../assets/img/pexels-pixabay-459335.jpg");
- 
-    position: relative;
-    background-size: 100% 100%;
+    background: url("../../assets/img/pexels-evgeni-lazarev-9532188.jpg");
+ background-size: 100% 100%;
+  
+
+
     background-repeat: repeat;
     
 }
@@ -31,7 +32,8 @@
     height: 1000px;
     margin-top: 120px;
     font-family: 'Dancing Script', cursive;
-
+color: white;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 2rem;
     border-radius: 5px;
     // background-image: ;
@@ -41,42 +43,49 @@
 
 .details {
     margin: 0 5%;
-    margin-left: 55%;
+    margin-left: 35%;
     height: 100%;
-    width: 50%;
+    width: 60%;
     
     text-align: center;
     
     border-radius: 5px;
 }
 
-h2 {
-   
-    font-size: 4rem;
+h1 {
+    margin-top: 15px;
+    font-size: 4.2rem;
 }
 
-p {
-    font-size: 1.7rem;
+h2 {
+
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 
 @media only screen and (max-width: 1020px) {
 
+    h1 {
+        margin-top: 35px;
+        font-size: 3.4rem;
+    }
 
     h2 {
-   
-        font-size: 3.6rem;
-    }
-    
-    p {
-        font-size: 1.5rem;
+
+        font-size: 2.3rem;
     }
     
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+    }
+    .details {
+        margin: 0 5%;
+    margin-left: 45%;
+        width: 50%;
+      
     }
 
 }
@@ -84,22 +93,12 @@ h3 {
 
 @media only screen and (max-width: 800px) {
 
-.hotels {
-    padding-top: 5%;
-   
-}
-   
-    h2 {
-   
-        font-size: 3.6rem;
-    }
-    
-    p {
-        font-size: 1.2rem;
-    }
-    
-    h3 {
-        font-size: 1.6rem;
+  
+    .details {
+        margin: 0 5%;
+
+        width: 90%;
+      
     }
 
 }
@@ -107,37 +106,44 @@ h3 {
 
 @media only screen and (max-width: 600px) {
 
+    h1 {
+        margin-top: 35px;
+        font-size: 3.4rem;
+    }
 
     h2 {
-   
-        font-size: 2.4rem;
-    }
-    
-    p {
-        font-size: 1.4rem;
+
+        font-size: 2.3rem;
     }
     
     h3 {
-        font-size: 1.4rem;
+        font-size: 1.9rem;
     }
+   
 
 }
 
 @media only screen and (max-width: 450px) {
 
 
-    h2 {
-   
-        font-size: 2.2rem;
+    h1 {
+        margin-top: 30px;
+        font-size: 3.3rem;
     }
-    
-    p {
-        font-size: 1.3rem;
+
+    h2 {
+
+        font-size: 2.3rem;
     }
     
     h3 {
-        font-size: 1.1rem;
+        font-size: 1.7rem;
     }
+
+
+
+
+  
 
 }
 
@@ -146,17 +152,25 @@ h3 {
 
    
 
+    h1 {
+     
+        font-size: 3rem;
+    }
+
     h2 {
         margin-top: 20px;
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
     
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     p {
         font-size: 1.1rem;
     }
+
+   
+    
 
 }

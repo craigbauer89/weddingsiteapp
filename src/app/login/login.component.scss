@@ -9,7 +9,7 @@
 }
 
 .spacing {
-    height:  100px;
+    height:  15px;
 }
 
 .login {
@@ -40,8 +40,9 @@ form {
 .username, .password, .login1, .register, .heading {
 
     height: 40px;
-    width: 100%;
-    margin-top: 10px;
+    width: 70%;
+    margin: 10px 15%;
+ 
    
 
 }
@@ -59,10 +60,15 @@ input, button, h1 {
     height: 40px;
     border: none;
     text-align: center;
-    
+   border-radius: 3px;
     
 
 }
+
+input {
+    background-color: rgb(250, 244, 244);
+}
+
 button {
 
 background-color: rgb(242, 222, 225);
@@ -106,8 +112,8 @@ background-color: rgb(242, 222, 225);
 
     .login {
   
-        margin: 10% 20%;
-        width: 60%;
+        margin: 10% 30%;
+        width: 40%;
 
 }
 
@@ -120,8 +126,8 @@ background-color: rgb(242, 222, 225);
   
      
         height: 400px;
-
-       
+        width: 60%;
+        margin: 10% 20%;
        
 
     }
@@ -174,6 +180,9 @@ background-color: rgb(242, 222, 225);
     .heading, h1 {
         font-size: 1.5rem;
     }
+
+
+
 
 }
 

@@ -5,12 +5,14 @@
     <div class="hotels">
         <div class="details">
           
-            <h2>Arcore</h2>
+            <h2>The Town</h2>
             
-            <p>This is the town where the wedding will take place and accomodation is located. The Church and reception are a 5 minute drive from the town, 
-               as is Beat restaurant, the venue for the second day pool party.
-               Accessible via train to Milano Porta Garibaldi and plenty of free parking options available.
-                Please see below, the options for getting there.
+            <p>
+                Arcore is the designated town for the wedding and serves as the central location for both the ceremony, events and accommodation. 
+                The Church, reception venue and second day pool party are conveniently situated just a 5-minute drive away from the town. 
+                For the convenience of guests who won't be driving, a coach service will be provided. 
+                Arcore can be easily accessed via train from Milano Porta Garibaldi, and there are ample free parking options available for those who prefer to drive.
+                Please see below options for getting there.
             </p>
             <p>
                 <i class="fa fa-info"><a href="https://en.wikipedia.org/wiki/Arcore" target="_blank" > More information</a></i>
@@ -26,20 +28,64 @@
     <div class="hotels">
         <div class="details">
           
-            <h2>Airports</h2>
+            <h2>Flying</h2>
             
             <p>There are 3 airports in the vicinity  of Arcore: Milan Malpensa, Milan Linate and Bergamo, a 55, 25 and 35 minute drive respectively.
                Bergamo and Linate offer bus services to Milan central train station, while Malpensa offers a train service to Milan Porta Garibaldi and Milan Central.
                Ryanair flys to both Bergamo and Malpensa from Dublin, while Aer Lingus offers its servce from Dublin to Linate.
+               Please choose from the options below to receive specific instructions on how to reach Arcore based on the airport you will be flying into.
                 
             </p>
             <p>
-                <i class="fa fa-plane"><a href="https://www.aerlingus.com/" target="_blank" >  Aerlingus Website &nbsp; &nbsp;</a></i>
-                <i class="fa fa-plane"><a href="https://www.ryanair.com/" target="_blank" >  Ryanair Website</a></i>
+                <button class="email" (click)="modifyPartita()">Malpensa</button>
+                    <button class="email" (click)="linatebox()">Linate</button>
+                        <button class="email"(click)="bergamobox()">Bergamo</button>
                 <p>
                     <br>
                    
             </p>
+            <div *ngIf="modifybox === true">
+
+                <div class="modify">
+                    <h2>Malpensa Airport</h2>
+                    <p>
+                        Malpensa Airport provides a convenient train service to Milan Porta Garibaldi, where you have two train options that make stops at Arcore. One train is headed in the direction of Lecco, while the other is headed towards Bergamo. For specific train schedules, please click the link below.
+                    </p>
+                     
+                   <br>
+                      <button (click)="close()" style="width : 10em; height: 3em;" >back</button>
+                   
+                    
+                </div>
+            </div>
+            <div *ngIf="linate === true">
+
+                <div class="modify">
+                    <h2>Linate Airport</h2>
+                    <p>
+                        Malpensa Airport provides a convenient train service to Milan Porta Garibaldi, where you have two train options that make stops at Arcore. One train is headed in the direction of Lecco, while the other is headed towards Bergamo. For specific train schedules, please click the link below.
+                    </p>
+                     
+                   <br>
+                      <button (click)="close()" style="width : 10em; height: 3em;" >back</button>
+                   
+                    
+                </div>
+            </div>
+            <div *ngIf="bergamo === true">
+
+                <div class="modify">
+                    <h2>Bergamo Airport</h2>
+                    <p>
+                        Malpensa Airport provides a convenient train service to Milan Porta Garibaldi, where you have two train options that make stops at Arcore. One train is headed in the direction of Lecco, while the other is headed towards Bergamo. For specific train schedules, please click the link below.
+                    </p>
+                     
+                   <br>
+                      <button (click)="close()" style="width : 10em; height: 3em;" >back</button>
+                   
+                    
+                </div>
+            </div>
         </div>
         <div class="contain">
             <div class="bestwest">
@@ -53,7 +99,7 @@
     <div class="hotels">
         <div class="details">
            
-            <h2>Train Stations</h2>
+            <h2>By Train</h2>
         <p> Arcore is located on a train line to Milan Porto Garibaldi in the centre of Milan. 
             2 trains run each hour to Arcore, one with destination Lecco and the other to Bergamo. 
             Malpensa offers a train service directly to Porto Garibaldi, whereas a conneting train from Milan central station is required if
@@ -80,9 +126,10 @@
     <div class="hotels">
         <div class="details">
 
-            <h2>Car Hire/Taxis </h2>
-        <p>We recommend hiring a car if you plan to travel before/after the wedding.
-            There will be free parking available at all hotels and veunes, should you not wish to avail of the coach service.
+            <h2>By Car/Car Hire/Taxis </h2>
+        <p>If driving, the addresses of all locations and accomodation are listed on their respective pages. The recommended hotels offer free parking, as do all venues. 
+            We recommend hiring a car if you plan to travel before/after the wedding.
+            should you not wish to avail of the coach service.
             If you do wish to book a car we recommend Europcar on Hertz. Taxis are available form all airports directly to Arcore.
             However this is quite a pricey alternative and not recommended. There are also taxis services available for getting around in Arcore.
             We suggest to book any journeys well in advance as taxis need to be booked via phone.
@@ -105,3 +152,5 @@
         </div>
     </div>
 </div>
+
+

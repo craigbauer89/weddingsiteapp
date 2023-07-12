@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccomodationComponent } from './accomodation/accomodation.component';
+import { BusServiceComponent } from './bus-service/bus-service.component';
 import { GoodToKnowComponent } from './good-to-know/good-to-know.component';
 import { GuardGuard } from './Guard/guard.guard';
 import { HomeComponent } from './home/home.component';
@@ -8,6 +9,7 @@ import { ItineraryComponent } from './itinerary/itinerary.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { TravelComponent } from './travel/travel.component';
@@ -44,6 +46,16 @@ const routes: Routes = [
     component: AccomodationComponent
   },
   {
+  path: 'restaurants',
+  canActivate: [GuardGuard],
+  component: RestaurantsComponent
+  },
+  {
+    path: 'bus',
+    canActivate: [GuardGuard],
+    component: BusServiceComponent
+    },
+  {
     path: 'travel',
     canActivate: [GuardGuard],
     component: TravelComponent
@@ -75,7 +87,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ scrollPositionRestoration: "enabled" })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

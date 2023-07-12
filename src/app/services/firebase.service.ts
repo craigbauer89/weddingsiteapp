@@ -75,6 +75,7 @@ export class FirebaseService {
       this.userData = user;
            localStorage.setItem('user', JSON.stringify(this.userData));
            let data = JSON.parse(localStorage.getItem('user')!);
+           this.router.navigate(['home']);
       }
     });
     
@@ -83,7 +84,7 @@ export class FirebaseService {
 
    
     
-    this.router.navigate(['home']);
+    
   }, err => {
     alert('Invail Email or Password');
     

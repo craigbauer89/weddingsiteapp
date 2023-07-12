@@ -19,6 +19,9 @@ import { LocationComponent } from './location/location.component';
 import { TravelComponent } from './travel/travel.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { GuardGuard } from './Guard/guard.guard';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { BusServiceComponent } from './bus-service/bus-service.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     LocationComponent,
     TravelComponent,
     RsvpComponent,
-    ThankyouComponent
+    ThankyouComponent,
+    RestaurantsComponent,
+    BusServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     // provideAuth(() => getAuth())
   ],
-  providers: [FirebaseService],
+  providers: [FirebaseService,GuardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

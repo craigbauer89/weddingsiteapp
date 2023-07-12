@@ -1,0 +1,229 @@
+
+.mainpage {
+    margin: 200px 12.5%;
+    width: 75%;
+
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.hotels {
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5%;
+    width: 90%;
+    margin-top: 25px;
+    height: 350px;
+    
+    border-radius: 5px;
+    justify-content: space-around;
+    background-color: white;
+    
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+}
+
+
+
+i {
+    
+    height: 15px;
+    width: 100%;
+    font-size: 1rem;
+    
+}
+
+
+.details {
+    
+    margin-top: 2.5%;
+    width: 45%;
+    
+    border-radius: 5px;
+
+    background-color: white;
+    text-align: center;
+}
+
+.bestwest {
+
+   
+    margin-right: 2.5%;
+    height: 80%;
+    width: 30%;
+ 
+
+
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+p {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .mainpage {
+        margin: 100px 7.5%;
+        width: 85%;
+    
+    }
+
+}
+
+@media screen and (max-width: 1125px) {
+  
+    .hotels {
+        margin-top: 10%;
+        height: 700px;
+     
+        
+    }
+
+
+    .bestwest, .hotel2, .apartments {
+       
+        height: 50%;
+
+     
+    }
+
+
+    .details {
+
+            
+           
+        width: 90%;
+      
+    }
+    
+    .bestwest, .hotel2, .apartments {
+       
+        width: 90%;
+
+     
+    }
+
+  
+}
+
+@media screen and (max-width: 900px) {
+
+    .hotels {
+        margin-top: 30%;
+    }
+
+    h2 {
+       
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+      
+        font-size: 1.2rem;
+    }
+    
+    
+    
+    i {
+        
+        font-size: 1rem;
+        
+        
+    }
+   
+    p {
+        font-size: 1rem;
+    }
+
+    .details {
+       
+        margin-bottom: 0;
+    }
+
+    .bestwest, .hotel2, .apartments {
+       
+       margin-top: 0;
+      
+     
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .details {
+        margin-top: 110px;
+    }
+
+  
+
+    .bestwest, .hotel2, .apartments {
+     
+        height: 30%;
+margin-bottom: 0;
+     
+    }
+
+   .details {
+    
+    height: 35%;
+    margin-bottom: 20%;
+   }
+
+    .hotels {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+        height: 500px;
+        margin-top: 55%;
+
+        
+    }
+   
+    h2 {
+       
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+      
+        font-size: 1.2rem;
+    }
+    
+    
+    
+    i {
+        
+        font-size: .9rem;
+        
+        
+    }
+   
+    p {
+        font-size: .8rem;
+    }
+
+}

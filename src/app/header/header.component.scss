@@ -1,9 +1,13 @@
-
+.mobileList {
+    height: 100px;
+   
+}
 
  header {
+    
     width: 100%;
     box-shadow: 0 3px 15px lightgrey;
-    padding: .5em;
+    padding: .2em;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -16,11 +20,22 @@
     font-size: 2.5rem;
     
 }
+/*
+.sub-list {
+    display: none;
+  }
+  
+  .main-list li:hover .sub-list {
+    display: block;
+  } */
 
+.width {
+    width: 80%;
+}
 
 .decoration {
-    border-top: 2.5px solid grey;
     
+    border-top: 2.5px solid grey;
     border-top-width: 50%;
     border-bottom: 1px solid grey;
     border-bottom-width: 30%;
@@ -31,9 +46,9 @@
       red, 
       rgba(0, 0, 0, 0)
     ) 1 100%; */
-
     
-    width: 100%;
+
+  width: 100%;
   padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
@@ -47,54 +62,75 @@
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Alex Brush', cursive;
-    // font-size: 2rem;
+     font-size: 2rem;
     width: 5%;
+    
   
     
 }
 
 nav {
-    margin-top: 15px;
+    
+
+    margin-top: 20px;
+   
 }
 
-nav li  {
-   
+li  {
+  
+    list-style-type: none;  
     padding: 0;
+    
+  
    
 }
 
-nav li a {
+#menuInfoMobile {
+    text-decoration: none;
+    color: grey;
+}
+
+#menuInfoMobile:hover  {
+    color: pink;
+}
+
+li a {
     
     text-decoration: none;
     color: grey;
 }
 
-nav li a:hover {
-    color: white;
-    background-color: grey;
-    padding: 0%;
-    text-decoration: underline;
+li a:hover {
+    color: pink;
 }
 
-header nav ul li a:hover{
-    color: white;
+ul li a:hover{
+    color: pink;
     
 }
 
 
-nav li a:active {
+ li a:active {
     
     color: red;
     text-decoration: none;
     
 }
 
-label {
-    margin-top: 25px;
+.info {
+margin-left: 100px;
+   margin-top: 20px;
+}
+
+#menuMobile {
+    margin-top: 35px;
+ 
 }
 
 nav ul {
     text-align: left;
+    width: 100%;
+    
 }
 
 #menuMobile .lni {
@@ -109,29 +145,75 @@ input#menuButton {
 }
 
 input#menuButton:checked ~ nav {
-    height: 250px;
+    height: 270px;
     
 } 
 
+input#infoButton {
+   display: none;
+   
+}
+
+
+.info {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    transition: height 0.5s ease-out;
+}
+
+.infoForMobile{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transition: height 0.5s ease-out;
+}
+
+
  @media screen and (max-width: 768px) {
+
+    .info {
+        display: none;
+    }
+
+    .initials {
+
+        position: fixed;
+        right: 5px;
+        top: 30px;
+        width: 50px;
+        margin-top: 15px;
+ 
+ 
+     
+     }
+
+
+
+
+
     header nav {
+
         height: 0;
         overflow: hidden;
         position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
         
+        
     }
 
-    nav li a:hover {
-        color: white;
-        background-color: grey;
-        padding: 0%;
+
+
+    li a:hover {
+        color: pink;
+       
+    
         
     }
     
-    header nav ul li a:hover{
-        color: white;
+    ul li a:hover{
+        color: pink;
         
     }
 
@@ -142,13 +224,8 @@ input#menuButton:checked ~ nav {
      
     }
 
-    .initials {
 
-        width: 10%;
-        font-size: 5rem;
-      
-
-    }
+   
 
 }
 
@@ -170,6 +247,21 @@ input#menuButton:checked ~ nav {
        font-size: 1.3rem;
        
    }
+
+   nav {
+    height: 30px;
+   margin-bottom: 15px;
+
+}
+
+
+
+.initials {
+
+   height: 30px;
+  
+
+}
    
 
 }
@@ -179,17 +271,21 @@ input#menuButton:checked ~ nav {
 
     header {
    
-       font-size: 1.1rem;
-       
+       font-size: 1.15rem;
+     
+
    }
+
+ 
+ 
 
 }
 
 @media screen and (min-width: 768px) {
 
-   
-    
-   
+    .infoForMobile {
+        display: none;
+    }
 
     #menuMobile {
         display: none;
@@ -203,11 +299,10 @@ input#menuButton:checked ~ nav {
         display: inline-block;
         margin: 0 0 0 1em;
     }
-    header nav ul li a {
-        text-decoration: none;
-        color: grey;
-    }
-
   
+  
+
+    
+
 
 }

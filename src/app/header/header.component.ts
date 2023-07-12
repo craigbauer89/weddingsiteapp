@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FirebaseService } from '../services/firebase.service';
 
 @Component({
@@ -8,12 +8,20 @@ import { FirebaseService } from '../services/firebase.service';
 })
 export class HeaderComponent implements OnInit {
 
+  @ViewChild('infoButton', { static: false }) infoButton!: ElementRef<HTMLInputElement>;
+
+
   constructor(private firebaseservice: FirebaseService, ) { }
+
+  isChecked = false;
+  isCheckedMobile = false;
 
   ngOnInit(): void {
   }
 
   closeMenu(): void {
+    this.isChecked = false;
+    this.isCheckedMobile = false;
     //
     const checkbox = document.getElementById(
       'menuButton',

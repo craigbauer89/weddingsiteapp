@@ -50,7 +50,7 @@ i {
 
 .details {
   
-    margin: 2.5% 0;
+    margin-top: 2.5%;
     width: 45%;
     
     border-radius: 5px;
@@ -85,7 +85,7 @@ i {
 
 .hotel2 {
    
-    background: url("../../assets/img/bed.jpeg");
+    background: url("../../assets/img/home_albergo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     margin: 2.5% 0;
@@ -128,10 +128,17 @@ p {
      
     }
 
+    .mainpage{
+       
+        width: 75%;
+        margin-right: 12.5%;
+        margin-left: 12.5%;
+    }
+
 
     .details {
 
-            height: 300px;
+            
            
         width: 90%;
       
@@ -149,6 +156,13 @@ p {
 
 @media screen and (max-width: 900px) {
 
+    .mainpage{
+        margin-top: 20%;
+    }
+
+    .hotels{
+        margin-top: 10%;
+    }
 
 
     h2 {
@@ -174,12 +188,39 @@ p {
         font-size: 1rem;
     }
 
+    .details {
+       
+        margin-bottom: 0;
+    }
+
+    .bestwest, .hotel2, .apartments {
+       
+       margin-top: 0;
+      
+     
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .mainpage{
+        margin-top: 30%;
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
 
 }
 
 @media screen and (max-width: 500px) {
 
   
+   .mainpage {
+    margin-top: 35%;
+
+   }
 
     .bestwest, .hotel2, .apartments {
        
@@ -188,13 +229,13 @@ p {
      
     }
 
-
+   
 
     .hotels {
         margin-left: 1%;
         margin-right: 1%;
         width: 98%;
-        height: 750px;
+        height: 600px;
         
     }
    
@@ -221,4 +262,63 @@ p {
         font-size: .8rem;
     }
 
+}
+
+
+@media screen and (max-width: 400px) {
+
+  
+    .mainpage {
+     margin-top: 50%;
+  
+    }
+
+    h2 {
+       
+        font-size: 2rem;
+    }
+
+    i {
+        
+        font-size: .7rem;
+        
+        
+    }
+
+    h3 {
+      
+        font-size: 1rem;
+    }
+
+ 
+    
+
+
+.details {
+    
+ 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+   
+    p {
+        font-size: .8rem;
+    }
+
+    .hotels {
+        height: 500px;
+       
+        margin-top: 0;
+        margin-bottom: 15%;
+    
+     
+    }
+
+
+    @media screen and (max-width: 350px){
+    p {
+        font-size: .6rem;
+    }
+
+}
 }

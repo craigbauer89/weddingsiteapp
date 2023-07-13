@@ -3,6 +3,8 @@
    
 }
 
+
+
  header {
     
     width: 100%;
@@ -172,6 +174,8 @@ input#infoButton {
 
  @media screen and (max-width: 768px) {
 
+    
+
     .info {
         display: none;
     }
@@ -183,14 +187,8 @@ input#infoButton {
         top: 30px;
         width: 50px;
         margin-top: 15px;
- 
- 
-     
+       
      }
-
-
-
-
 
     header nav {
 
@@ -199,17 +197,12 @@ input#infoButton {
         position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
-        
-        
+
     }
-
-
 
     li a:hover {
         color: pink;
-       
-    
-        
+
     }
     
     ul li a:hover{
@@ -217,10 +210,11 @@ input#infoButton {
         
     }
 
+
     i {
         
         font-size: 25px;
-        
+
      
     }
 
@@ -304,5 +298,56 @@ input#infoButton {
 
     
 
+
+}
+
+@media screen and (max-width: 768px) {
+
+    
+
+    .info {
+        display: none;
+    }
+
+    .initials {
+
+        position: fixed;
+        right: 5px;
+        top: 30px;
+        width: 50px;
+        margin-top: 15px;
+       
+     }
+
+    header nav {
+
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+
+    }
+
+    li a:hover {
+        color: pink;
+
+    }
+    
+    ul li a:hover{
+        color: pink;
+        
+    }
+
+
+    i {
+        
+        font-size: 25px;
+
+     
+    }
+
+
+   
 
 }

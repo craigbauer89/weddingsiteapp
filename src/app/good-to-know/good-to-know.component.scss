@@ -20,6 +20,31 @@ body {
     border-radius: 5px;
 }
 
+button {
+    height: 75px;
+    width: 30%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(208, 229, 245);
+    border: 1px solid grey;
+    margin: 0 35%;
+    text-align: center;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Alex Brush', cursive;
+   
+}
+
+button:hover {
+    background-color: grey;
+   
+}
+
+
 .details {
     margin: 12.5% 5%;
     width: 80%;
@@ -77,6 +102,11 @@ h3 {
             font-size: 1rem;
         }
        
-   
+        button {
+        
+            font-size: 1.2rem;
+         
+        }
+        
 
 }

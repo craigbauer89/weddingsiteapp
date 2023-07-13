@@ -14,9 +14,9 @@
                 Arcore can be easily accessed via train from Milano Porta Garibaldi, and there are ample free parking options available for those who prefer to drive.
                 Please see below options for getting there.
             </p>
-            <p>
+            <!-- <p>
                 <i class="fa fa-info"><a href="https://en.wikipedia.org/wiki/Arcore" target="_blank" > More information</a></i>
-                </p>
+                </p> -->
 
         </div>
         <div class="contain">
@@ -25,8 +25,12 @@
         </div>
     </div>
 
-    <div class="hotels">
-        <div class="details">
+    <div class="flying">
+        <div [hidden]="!bigscreen || hidemap" class="contain">
+            <div class="bestwest">
+            </div>
+        </div>
+        <div class="details" id="margin">
           
             <h2>Flying</h2>
             
@@ -34,17 +38,16 @@
                Bergamo and Linate offer bus services to Milan central train station, while Malpensa offers a train service to Milan Porta Garibaldi and Milan Central.
                Ryanair flys to both Bergamo and Malpensa from Dublin, while Aer Lingus offers its servce from Dublin to Linate.
                Please choose from the options below to receive specific instructions on how to reach Arcore based on the airport you will be flying into.
-                
             </p>
-            <p>
-                <button class="email" (click)="modifyPartita()">Malpensa</button>
-                    <button class="email" (click)="linatebox()">Linate</button>
-                        <button class="email"(click)="bergamobox()">Bergamo</button>
-                <p>
-                    <br>
+           
+                <button class="email" (click)="modifyPartita()"><i class="fa fa-plane"></i> Malpensa</button>
+                    <button class="email" (click)="linatebox()"><i class="fa fa-plane"></i> Linate</button>
+                        <button class="email"(click)="bergamobox()"><i class="fa fa-plane"></i> Bergamo</button>
+    
+        
                    
-            </p>
-            <div *ngIf="modifybox === true">
+    
+   <!--          <div *ngIf="modifybox === true">
 
                 <div class="modify">
                     <h2>Malpensa Airport</h2>
@@ -53,7 +56,7 @@
                     </p>
                      
                    <br>
-                      <button (click)="close()" style="width : 10em; height: 3em;" >back</button>
+                      <button (click)="close()" style="width : 10em; height: 3em;" ><i class="fa fa-times-circle" aria-hidden="true"></i></button>
                    
                     
                 </div>
@@ -67,7 +70,7 @@
                     </p>
                      
                    <br>
-                      <button (click)="close()" style="width : 10em; height: 3em;" >back</button>
+                      <button (click)="close()" style="width : 10em; height: 3em;" ><i class="fa fa-times-circle" aria-hidden="true"></i></button>
                    
                     
                 </div>
@@ -81,18 +84,90 @@
                     </p>
                      
                    <br>
-                      <button (click)="close()" style="width : 10em; height: 3em;" >back</button>
+                      <button (click)="close()" style="width : 10em; height: 3em;" ><i class="fa fa-times-circle" aria-hidden="true"></i></button>
                    
                     
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="contain">
+        <div [hidden]="bigscreen || hidemap"  class="contain">
             <div class="bestwest">
             </div>
         </div>
     </div>
 
+
+    <div class="airportdetails"*ngIf="modifybox === true" >
+        <div class="modify">
+        
+                <h2>Malpensa Airport</h2>
+                <p>    Malpensa Airport provides a convenient train service to Milan Porta Garibaldi, 
+                    where you have two train options that make stops at Arcore. 
+                    One train is headed in the direction of Lecco(via Carnate), 
+                    while the other is headed towards Bergamo. 
+                    <br> 
+                    You can also avail of bus transfers to Milan Cenrale, but the train option is recommended as it is much faster.
+                    For specific train schedules, please click the link below.  </p>
+              <button (click)="close()" ><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+      
+      
+            </div>
+            
+        
+        <div class="contain">
+            <div class="malpensa">
+            </div>
+        </div>
+
+    
+    </div>
+
+    <div class="airportdetails"*ngIf="linate === true">
+        <div class="modify">
+           
+            <h2>Linate Airport</h2>
+                <p>
+                Linate Airport provides a metro service to Milano San Babila on the M4 blue line. 
+                From here you can change to the M1 red line all the way to Sesto Maggio where you can connect to the Begamo and Lecco(via Carnate) trains,
+                or stop at Loreto, and change to the M2 green line, direction Assago, which goes to Milano Garibaldi and Centrale.      
+       
+                <br>  The other option is to take a bus to Milan Central Station. See information provided. 
+                </p>
+              <button (click)="close()" ><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        </div>
+        
+        <div class="contain">
+            <div class="linate">
+            </div>
+        </div>
+
+    
+    </div>
+
+    <div class="airportdetails"*ngIf="bergamo === true">
+      
+
+        <div class="modify">
+           
+            <h2>Bergamo Airport</h2>
+                <p>
+                    There are many bus services to Milan Centrale from Bergamo Airport.
+                    You could also take the bus (number 1) to Bergamo train station and from there, take a train to Arcore, 
+                    with destination Milano Porta Garibaldi.
+                    Although this is a more complicated,
+                    it would be considerably quicker than travelling into Milan and back out to Arcore.
+                    A taxi from Bergamo Airport to the train station would be a quicker and easier alternative, and would cost 17-20 euro
+                </p>
+              <button (click)="close()" ><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        </div>
+        
+        <div class="contain">
+            <div class="bergamo">
+            </div>
+        </div>
+
+    
+    </div>
    
  
 
@@ -100,11 +175,10 @@
         <div class="details">
            
             <h2>By Train</h2>
-        <p> Arcore is located on a train line to Milan Porto Garibaldi in the centre of Milan. 
-            2 trains run each hour to Arcore, one with destination Lecco and the other to Bergamo. 
-            Malpensa offers a train service directly to Porto Garibaldi, whereas a conneting train from Milan central station is required if
-       flying into Linate or Bergamo. You can either choose to avail of the metro service (M2 green line, direction: Assago) to connect to porto Garibaldi, otherwise 
-       take a train to Monza, connecting to the Lecco or Bergamo trains from there.
+        <p> Arcore is situated along a train route that connects to Milan Porto Garibaldi train station. 
+            Trains to Arcore from here operate twice per hour, one with destination Lecco and the other, Bergamo. 
+            An alternative option is to take a train from Milano Centrale to Monza, where you can easily transfer to trains bound for Lecco or Bergamo.
+            Both Milan Garibaldi and Centrale sare erved by the M2 green line metro. You can find all train time information with the below links.
             
         </p>
         <p>
@@ -124,21 +198,24 @@
     
     </div>
     <div class="hotels">
+        <div [hidden]="!bigscreen"class="contain">
+            <div class="hotel2">
+            </div>
+        </div>
         <div class="details">
 
-            <h2>By Car/Car Hire/Taxis </h2>
-        <p>If driving, the addresses of all locations and accomodation are listed on their respective pages. The recommended hotels offer free parking, as do all venues. 
-            We recommend hiring a car if you plan to travel before/after the wedding.
-            should you not wish to avail of the coach service.
-            If you do wish to book a car we recommend Europcar on Hertz. Taxis are available form all airports directly to Arcore.
-            However this is quite a pricey alternative and not recommended. There are also taxis services available for getting around in Arcore.
+            <h2>By Car </h2>
+        <p>If driving or renting a car, the addresses of all locations and accomodation are listed on their respective pages. 
+            All recommended hotels offer free parking, as do all venues, should you not wish to avail of the coach service.
+            If you do wish to book a car we recommend Europcar on Hertz. Taxis are available form all airports directly to Arcore, 
+            however this is quite a pricey alternative and not recommended. There are also taxis services available for getting around in Arcore.
             We suggest to book any journeys well in advance as taxis need to be booked via phone.
         </p>
         <p>
-            <i class="fa fa-car"><a href="https://www.europcar.com/" target="_blank" > Europcar Website &nbsp; &nbsp;</a></i>
-                <i class="fa fa-car"><a href="https://www.hertz.com/" target="_blank" >  Herzt Website   </a></i>
+            <!-- <i class="fa fa-car"><a href="https://www.europcar.com/" target="_blank" > Europcar Website &nbsp; &nbsp;</a></i>
+                <i class="fa fa-car"><a href="https://www.hertz.com/" target="_blank" >  Herzt Website   </a></i> -->
             <br>
-                <i class="fa fa-car"><a href="https://taximonzabrianza.it/taxi-arcore/" target="_blank" > Taxi Number </a></i>
+                <i class="fa fa-car"><a href="https://taximonzabrianza.it/taxi-arcore/" target="_blank" > Arcore Taxi Number </a></i>
 
 
                
@@ -146,11 +223,12 @@
         
         
         </div>
-        <div class="contain">
+        <!-- <div [hidden]="bigscreen"class="contain">
             <div class="hotel2">
             </div>
-        </div>
+        </div> -->
     </div>
+   
 </div>
 
 

@@ -65,7 +65,13 @@ h3 {
 }
 
 
+@media screen and (min-width: 1500px) {
 
+    .details {
+        margin-top: 40px;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
 
